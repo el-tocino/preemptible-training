@@ -1,0 +1,12 @@
+[Unit]
+Description=Start training
+After=network.target auditd.service
+
+[Service]
+Type=simple
+User=$USER
+ExecStart=/home/$USER/train.sh
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
