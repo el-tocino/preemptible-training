@@ -1,0 +1,11 @@
+[Unit]
+Description=Start tensorboard
+After=network.target auditd.service training.service
+
+[Service]
+User=$USER
+ExecStart=/home/$USER/tboard.sh
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
