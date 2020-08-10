@@ -10,11 +10,11 @@ I used the google image for machine learning as a base, put TTS and some other t
 
 ### Add tools and restart scripts.
 
-Add the auto-start training startup file, and the tensorboard script to /etc/systemd/system.  Make sure they run correctly. 
+Add the auto-start training service file, and the tensorboard service file to /etc/systemd/system.  Edit them to add your relevant user and path arguments!  Add the train.sh and tboard.sh to your home directory.  Be sure to mark them executable.  Make a "logs" directory in your home dir.  
 
 Add a cron entry for the halting script. 
 ```*/5 * * * * /home/$yourusernamehere/halter.sh```
-
+This is a kludge, but one that works for me, since training randomly stopped training but kept running a couple of times.  Had to reboot to get it to do anything.  
 Reboot to test everything works as expected.  
 
 ### Create snapshot
