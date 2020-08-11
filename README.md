@@ -6,7 +6,7 @@ I used: n1, 8 cpu/30gb ram, add a GPU (t4) and set the other options you like.
 Under Cloud API access, make sure you allow all.  
 Expand management options and turn preemptible On. 
 Start it up and get the software you want installed and running.  
-I used the google image for machine learning as a base, put TTS and some other things I used on it.  
+I used the google image for machine learning (it's free) as a base, put TTS and some other things I used on it.  
 
 #### Add tools and restart scripts.
 
