@@ -6,5 +6,5 @@ lastd=$(ls -tr | grep ga-tts | tail -1)
 rm -f /home/$USER/LJ/latest && ln -s $lastd latest
 cd latest
 BCMD="tensorboard --logdir `pwd`"
-RUN_CMD="screen -mdS board $BCMD"
+RUN_CMD="screen -S board  -md $BCMD"
 $RUN_CMD
