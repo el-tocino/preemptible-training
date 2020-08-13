@@ -5,5 +5,5 @@ FLA=$(cat /proc/loadavg | awk '  { print $3 } ' | cut -d. -f1)
 LFLA=$(cat /home/$USER/logs/5mla )
 echo "$FLA" > /home/$USER/logs/5mla
 if [[ $FLA -lt 2  &&  $LFLA -lt 2 ]] ; then
-        gcloud compute instances stop $INSTANCE
+        gcloud compute instances --zone=us-central-1a  stop $INSTANCE
 fi
