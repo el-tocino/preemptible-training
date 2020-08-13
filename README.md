@@ -30,4 +30,8 @@ Go to instance groups, create a new instance group.  Turn off autoscaling.  Set 
 
 Once you save the instance group it will become active.  A new VM instance will start up.  Log into it, and verify that your scripts started everything up as planed.  
 
+#### Connecting to tensorboard
+
+tk
+something something  https://cloud.google.com/compute/docs/instance-groups/adding-an-instance-group-to-a-load-balancer
 
